@@ -20,7 +20,7 @@ app.use(helmet())
 app.use(xss())
 app.use(mongoSanitize())
 app.use(cors({
-  origin: ['https://michtaiwo.com/'],
+  origin: ['https://michtaiwo.com', 'http://localhost:3000'],
   credentials: true
 }))
 app.use('/api/v1/auth', userRouter);
